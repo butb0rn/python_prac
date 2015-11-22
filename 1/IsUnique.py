@@ -1,18 +1,18 @@
-def isUnique(input):
+def is_unique(input):
 
     if not input:
         raise NameError('Empty input')
     input = input.lower()
-    charKey = {}
+    char_key = {}
     for i in input:
-        if i in charKey.keys():
-            charKey[i] += 1
+        if i in char_key.keys():
+            char_key[i] += 1
             print False
             return
         else:
-            charKey[i] = 1
+            char_key[i] = 1
     print True
 
 
-isUnique("Ehsan")
-isUnique("EhSEs")
+is_unique("Ehsan")
+is_unique("EhSEs")
